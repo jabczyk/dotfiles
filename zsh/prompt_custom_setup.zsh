@@ -107,7 +107,7 @@ prompt_custom_setup() {
 	ZSH_THEME_GIT_PROMPT_UNMERGED="%F{yellow}unmerged%f "
 	# ZSH_THEME_GIT_PROMPT_UNTRACKED="%F{cyan}✩%f "
 
-	PROMPT='%F{white}%~$(git_prompt_info) $(git_prompt_status) %F{white} $%f '
+	PROMPT='%F{white}%~$(git_prompt_info) $(git_prompt_status)%F{white}$%f '
 	RPROMPT="%F{gray}%*"
 }
 

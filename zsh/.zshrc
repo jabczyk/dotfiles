@@ -8,9 +8,12 @@ source $ZDOTDIR/aliases.zsh
 
 # Prompt
 fpath=($ZDOTDIR $fpath)
-# autoload -Uz prompt.zsh; prompt.zsh
 autoload -U promptinit && promptinit
 prompt custom
 
 # Completion
 autoload -U compinit; compinit
+
+# Java
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"

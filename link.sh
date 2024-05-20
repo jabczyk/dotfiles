@@ -13,3 +13,7 @@ ln -s $DOTFILES/zsh/.zprofile "$CONFIG_HOME/zsh/.zprofile"
 ln -s $DOTFILES/zsh/.zshrc "$CONFIG_HOME/zsh/.zshrc"
 ln -s $DOTFILES/zsh/aliases.zsh "$CONFIG_HOME/zsh/aliases.zsh"
 ln -s $DOTFILES/zsh/prompt_custom_setup.zsh "$CONFIG_HOME/zsh/prompt_custom_setup"
+
+# Vim
+# (Apparently doesn't support XDG_CONFIG_HOME)
+ln -s "$DOTFILES/vim/.vimrc" ~/.vimrc

@@ -26,11 +26,16 @@ brew install --cask raycast
 brew install --cask postman
 brew install --cask discord
 brew install --cask telegram
+brew install --cask steam
+brew install --cask macwhisper
 
 brew install stats
 brew install mos
 brew install node
 brew install yarn
+brew install orbstack
+brew install openjdk
+brew install maven
 
 # Install fonts
 brew tap homebrew/cask-fonts
@@ -93,3 +98,6 @@ defaults write com.apple.dock autohide -bool true
 # Show App Switcher (Cmd+Tab) on all displays
 defaults write com.apple.dock appswitcher-all-displays -bool true
 killall Dock
+
+# Disable accented characters popup
+defaults write -g ApplePressAndHoldEnabled -bool false

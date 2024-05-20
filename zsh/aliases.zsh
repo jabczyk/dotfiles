@@ -7,6 +7,8 @@ alias c='clear'
 # Git
 alias g='git'
 alias gs='git status'
+alias gst='git stash'
+alias gstp='git stash pop'
 alias gc='git commit -m'
 alias gco='git checkout'
 alias gbr='git branch'
