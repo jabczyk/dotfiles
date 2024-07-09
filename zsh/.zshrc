@@ -17,3 +17,9 @@ autoload -U compinit; compinit
 # Java
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
+
+# fzf
+source <(fzf --zsh)
+
+# Zoxide (z)
+eval "$(zoxide init zsh)"

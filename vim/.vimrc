@@ -1,5 +1,7 @@
-colorscheme elflord
+colorscheme torte
+syntax on
 
+set clipboard=unnamed
 set belloff=all
 set nu rnu
 

@@ -28,14 +28,21 @@ brew install --cask discord
 brew install --cask telegram
 brew install --cask steam
 brew install --cask macwhisper
+brew install --cask the-unarchiver
+brew install --cask ticktick
+brew install --cask linearmouse
+brew install --cask utm
+brew install --cask zed
 
 brew install stats
-brew install mos
 brew install node
 brew install yarn
 brew install orbstack
 brew install openjdk
 brew install maven
+brew install shortcat
+brew install fzf
+brew install zoxide
 
 # Install fonts
 brew tap homebrew/cask-fonts
@@ -66,10 +73,8 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate
-# defaults write NSGlobalDomain KeyRepeat -int 1
-# defaults write NSGlobalDomain InitialKeyRepeat -int 10
-defaults write NSGlobalDomain KeyRepeat -int 2
-defaults write NSGlobalDomain InitialKeyRepeat -int 20
+defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain InitialKeyRepeat -int 25
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true

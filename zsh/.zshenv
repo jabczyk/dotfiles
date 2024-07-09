@@ -11,6 +11,6 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 HISTFILE=$XDG_DATA_HOME/.zsh_history
 HISTSIZE=50000
 SAVEHIST=50000
-setopt INC_APPEND_HISTORY
-setopt HIST_SAVE_NO_DUPS
-
+setopt share_history
+setopt hist_save_no_dups
+setopt hist_ignore_space
