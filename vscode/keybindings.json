@@ -1,0 +1,72 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "command": "selectNextSuggestion",
+    "key": "ctrl+j",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "command": "selectPrevSuggestion",
+    "key": "ctrl+k",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "command": "workbench.action.quickOpenNavigateNextInFilePicker",
+    "key": "ctrl+j",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "command": "workbench.action.tasks.runTask",
+    "key": "cmd+e"
+  },
+  {
+    "command": "workbench.files.action.focusFilesExplorer",
+    "key": "ctrl+q"
+  },
+  {
+    "command": "workbench.files.action.focusFilesExplorer",
+    "key": "ctrl+h",
+    "when": "editorTextFocus"
+  },
+  {
+    "command": "explorer.newFile",
+    "key": "n",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "explorer.newFile",
+    "key": "c",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "renameFile",
+    "key": "r",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "command": "extension.vim_ctrl+j",
+    "key": "ctrl+j",
+    "when": "editorTextFocus && vim.active && vim.use<C-j> && vim.mode != 'Insert' && !inDebugRepl"
+  },
+  {
+    "command": "extension.vim_ctrl+k",
+    "key": "ctrl+k",
+    "when": "editorTextFocus && vim.active && vim.use<C-k> && vim.mode != 'Insert' && !inDebugRepl"
+  },
+  // Mac fixes
+  {
+    "command": "renameFile",
+    "key": "cmd+enter",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "command": "-renameFile",
+    "key": "enter",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "command": "list.select",
+    "key": "enter",
+    "when": "listFocus && !inputFocus"
+  }
+]

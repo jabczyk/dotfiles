@@ -17,3 +17,7 @@ ln -s $DOTFILES/zsh/prompt_custom_setup.zsh "$CONFIG_HOME/zsh/prompt_custom_setu
 # Vim
 # (Apparently doesn't support XDG_CONFIG_HOME)
 ln -s "$DOTFILES/vim/.vimrc" ~/.vimrc
+
+# VSCode
+ln -s $DOTFILES/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -s $DOTFILES/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
