@@ -31,18 +31,22 @@ brew install --cask macwhisper
 brew install --cask the-unarchiver
 brew install --cask ticktick
 brew install --cask linearmouse
-brew install --cask utm
 brew install --cask zed
 
 brew install stats
 brew install node
 brew install yarn
+brew install pnpm
+brew install go
 brew install orbstack
 brew install openjdk
 brew install maven
 brew install shortcat
 brew install fzf
 brew install zoxide
+brew install ripgrep
+brew install nmap
+brew install gh
 
 # Install fonts
 brew tap homebrew/cask-fonts

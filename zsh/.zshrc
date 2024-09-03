@@ -1,10 +1,16 @@
 #!/usr/bin/env zsh
 
+DOTFILES="$HOME/.dotfiles"
+
 # Libs
 for f in $ZDOTDIR/lib/*; do source $f; done
 
 # Aliases
 source $ZDOTDIR/aliases.zsh
+
+for alias_file in $(find "$DOTFILES/projects" -type f -name 'aliases.sh'); do
+  source "$alias_file"
+done
 
 # Prompt
 fpath=($ZDOTDIR $fpath)
