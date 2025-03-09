@@ -18,8 +18,10 @@ const APP_KEYS = {
   a: toApp('Arc'),
   s: toApp('Spotify'),
   d: toApp('Discord'),
+  f: toApp('Finder'),
+  o: toApp('Orion'),
   c: toApp('Visual Studio Code'),
-  t: toApp('Terminal'),
+  t: toApp('iTerm'),
   b: toApp('DBeaver'),
   p: toApp('Postman'),
   n: toApp('Obsidian'),
@@ -27,7 +29,6 @@ const APP_KEYS = {
   i: toApp('TickTick'),
   m: toApp('Messages'),
   e: toApp('Telegram'),
-  f: toApp('Finder'),
 }
 
 export const rules = () => [

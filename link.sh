@@ -21,3 +21,9 @@ ln -s "$DOTFILES/vim/.vimrc" ~/.vimrc
 # VSCode
 ln -s $DOTFILES/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
 ln -s $DOTFILES/vscode/keybindings.json ~/Library/Application\ Support/Code/User/keybindings.json
+
+# Tmux
+ln -s $DOTFILES/tmux/.tmux.conf ~/.tmux.conf
+
+# Git
+ln -s $DOTFILES/git/.gitconfig ~/.gitconfig

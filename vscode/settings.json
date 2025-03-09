@@ -96,7 +96,7 @@
   "git.openRepositoryInParentFolders": "never",
   "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.enable": {
-    "*": true,
+    "*": true
   },
   "gitlens.advanced.fileHistoryFollowsRenames": true,
   "gitlens.codeLens.enabled": false,
@@ -197,9 +197,7 @@
       ]
     },
     "Git Bash": {
-      "args": [
-        "-l"
-      ],
+      "args": ["-l"],
       "source": "Git Bash"
     },
     "PowerShell": {
@@ -207,7 +205,7 @@
       "source": "PowerShell"
     }
   },
-  "terminal.integrated.scrollback": 25000,
+  "terminal.integrated.scrollback": 5000,
   "typescript.disableAutomaticTypeAcquisition": true,
   "typescript.format.enable": true,
   "typescript.tsserver.useSyntaxServer": "never",
@@ -233,242 +231,115 @@
   "vim.leader": "<space>",
   "vim.normalModeKeyBindings": [
     {
-      "before": [
-        "shift+alt+down"
-      ],
-      "commands": [
-        "editor.action.copyLinesDownAction"
-      ]
+      "before": ["shift+alt+down"],
+      "commands": ["editor.action.copyLinesDownAction"]
     },
     {
-      "after": [
-        "gh"
-      ],
-      "before": [
-        "ff"
-      ]
+      "after": ["gh"],
+      "before": ["ff"]
     },
     {
-      "after": [
-        "dd"
-      ],
-      "before": [
-        "D"
-      ]
+      "after": ["dd"],
+      "before": ["D"]
     },
     // harpoon
     {
-      "before": [
-        "<leader>",
-        "a"
-      ],
-      "commands": [
-        "vscode-harpoon.addEditor"
-      ]
+      "before": ["<leader>", "a"],
+      "commands": ["vscode-harpoon.addEditor"]
     },
     {
-      "before": [
-        "<leader>",
-        "H"
-      ],
-      "commands": [
-        "vscode-harpoon.editEditors"
-      ]
+      "before": ["<leader>", "H"],
+      "commands": ["vscode-harpoon.editEditors"]
     },
     {
-      "before": [
-        "<leader>",
-        "h"
-      ],
-      "commands": [
-        "vscode-harpoon.editorQuickPick"
-      ]
+      "before": ["<leader>", "h"],
+      "commands": ["vscode-harpoon.editorQuickPick"]
     },
     {
-      "before": [
-        "<leader>",
-        "1"
-      ],
-      "commands": [
-        "vscode-harpoon.gotoEditor1"
-      ]
+      "before": ["<leader>", "1"],
+      "commands": ["vscode-harpoon.gotoEditor1"]
     },
     {
-      "before": [
-        "<leader>",
-        "2"
-      ],
-      "commands": [
-        "vscode-harpoon.gotoEditor2"
-      ]
+      "before": ["<leader>", "2"],
+      "commands": ["vscode-harpoon.gotoEditor2"]
     },
     {
-      "before": [
-        "<leader>",
-        "3"
-      ],
-      "commands": [
-        "vscode-harpoon.gotoEditor3"
-      ]
+      "before": ["<leader>", "3"],
+      "commands": ["vscode-harpoon.gotoEditor3"]
     },
     {
-      "before": [
-        "<leader>",
-        "4"
-      ],
-      "commands": [
-        "vscode-harpoon.gotoEditor4"
-      ]
+      "before": ["<leader>", "4"],
+      "commands": ["vscode-harpoon.gotoEditor4"]
     },
     {
-      "before": [
-        "<leader>",
-        "5"
-      ],
-      "commands": [
-        "vscode-harpoon.gotoEditor5"
-      ]
+      "before": ["<leader>", "5"],
+      "commands": ["vscode-harpoon.gotoEditor5"]
     },
     // closing buffers/tabs
     {
-      "before": [
-        "<leader>",
-        "b",
-        "l"
-      ],
-      "commands": [
-        "workbench.action.closeEditorsToTheLeft"
-      ]
+      "before": ["<leader>", "b", "l"],
+      "commands": ["workbench.action.closeEditorsToTheLeft"]
     },
     {
-      "before": [
-        "<leader>",
-        "b",
-        "r"
-      ],
-      "commands": [
-        "workbench.action.closeEditorsToTheRight"
-      ]
+      "before": ["<leader>", "b", "r"],
+      "commands": ["workbench.action.closeEditorsToTheRight"]
     },
     {
-      "before": [
-        "<leader>",
-        "b",
-        "o"
-      ],
-      "commands": [
-        "workbench.action.closeOtherEditors"
-      ]
+      "before": ["<leader>", "b", "o"],
+      "commands": ["workbench.action.closeOtherEditors"]
     },
     {
-      "before": [
-        "<leader>",
-        "b",
-        "a"
-      ],
-      "commands": [
-        "workbench.action.closeAllEditors"
-      ]
+      "before": ["<leader>", "b", "a"],
+      "commands": ["workbench.action.closeAllEditors"]
     },
     // naavigating buffers/tabs with H/L
     {
-      "before": [
-        "H"
-      ],
-      "commands": [
-        "workbench.action.previousEditor"
-      ]
+      "before": ["H"],
+      "commands": ["workbench.action.previousEditor"]
     },
     {
-      "before": [
-        "L"
-      ],
-      "commands": [
-        "workbench.action.nextEditor"
-      ]
+      "before": ["L"],
+      "commands": ["workbench.action.nextEditor"]
     },
     // ]e [e - go to previous/next error/marker
     {
-      "before": [
-        "[",
-        "e"
-      ],
-      "commands": [
-        "editor.action.marker.prev"
-      ]
+      "before": ["[", "e"],
+      "commands": ["editor.action.marker.prev"]
     },
     {
-      "before": [
-        "]",
-        "e"
-      ],
-      "commands": [
-        "editor.action.marker.next"
-      ]
+      "before": ["]", "e"],
+      "commands": ["editor.action.marker.next"]
     },
     // rebinding vscode features
     {
-      "before": [
-        "<leader>",
-        "g"
-      ],
-      "commands": [
-        "workbench.view.scm"
-      ]
+      "before": ["<leader>", "g"],
+      "commands": ["workbench.view.scm"]
     },
     {
-      "before": [
-        "<leader>",
-        "s"
-      ],
-      "commands": [
-        "workbench.view.search"
-      ]
+      "before": ["<leader>", "s"],
+      "commands": ["workbench.view.search"]
     },
     {
-      "before": [
-        "<leader>",
-        "e"
-      ],
-      "commands": [
-        "workbench.files.action.focusFilesExplorer"
-      ]
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.files.action.focusFilesExplorer"]
     },
     // Taken from https://gist.github.com/brotherkaif/098f14950d538cb7001a7e04d8d884ee
     {
       // Code Action
-      "before": [
-        "<leader>",
-        "c",
-        "a"
-      ],
-      "commands": [
-        "editor.action.quickFix"
-      ],
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"],
       "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
     },
     {
       // Source Action
-      "before": [
-        "<leader>",
-        "c",
-        "A"
-      ],
-      "commands": [
-        "editor.action.quickFix"
-      ],
+      "before": ["<leader>", "c", "A"],
+      "commands": ["editor.action.quickFix"],
       "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
     },
     {
       // Rename
-      "before": [
-        "<leader>",
-        "c",
-        "r"
-      ],
-      "commands": [
-        "editor.action.rename"
-      ],
+      "before": ["<leader>", "c", "r"],
+      "commands": ["editor.action.rename"],
       "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
     }
   ],
@@ -478,20 +349,12 @@
   "vim.vimrc.enable": true,
   "vim.visualModeKeyBindings": [
     {
-      "before": [
-        ">"
-      ],
-      "commands": [
-        "editor.action.indentLines"
-      ]
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
     },
     {
-      "before": [
-        "<"
-      ],
-      "commands": [
-        "editor.action.outdentLines"
-      ]
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
     }
   ],
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -582,12 +445,33 @@
       "titleBar.activeBackground": "#010101",
       "titleBar.border": "#010101",
       "titleBar.inactiveBackground": "#010101"
+    },
+    "[Gruvbox Material Light]": {
+      "editorGroup.border": "#282828",
+      "panel.border": "#282828",
+      "sideBar.border": "#282828",
+      "activityBar.border": "#282828"
+    },
+    "[Gruvbox Material Dark]": {
+      "editorGroup.border": "#A8998450",
+      "panel.border": "#A8998440",
+      "sideBar.border": "#A8998440",
+      "activityBar.border": "#A8998440"
     }
   },
-  "workbench.colorTheme": "Horizon",
   "workbench.editor.decorations.badges": false,
   "workbench.editor.decorations.colors": false,
   "workbench.editor.limit.enabled": true,
   "workbench.localHistory.enabled": false,
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "workbench.colorTheme": "Gruvbox Material Dark",
+  "typescript.tsserver.maxTsServerMemory": 6144,
+  "typescript.tsserver.nodePath": "/opt/homebrew/bin/node",
+  "window.newWindowDimensions": "maximized",
+  "scm.showHistoryGraph": false,
+  // "terminal.integrated.gpuAcceleration": "off",
+  // temporary
+  "terminal.integrated.shellIntegration.enabled": false,
+  "supermaven.enableFixWithSupermaven": true,
+  "supermaven.otherWarning": false
 }

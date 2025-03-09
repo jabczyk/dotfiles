@@ -1,9 +1,12 @@
-colorscheme torte
+" colorscheme torte
+colorscheme default
 syntax on
 
 set clipboard=unnamed
 set belloff=all
+set re=2
 set nu rnu
+set rtp+=/opt/homebrew/opt/fzf
 
 map <space> <leader>
 

@@ -2,6 +2,7 @@
 
 # Basic commands
 alias ls='ls -a --color=auto'
+alias ll='ls -l'
 alias c='clear'
 alias s='sudo'
 alias cd=z
@@ -19,6 +20,7 @@ alias gstp='git stash pop'
 alias gc='git commit'
 alias gcm='git commit -m'
 alias gco='git checkout'
+alias gcp='git cherry-pick'
 alias gb='git branch'
 alias gbr=gb
 alias gp='git pull'
@@ -37,6 +39,17 @@ alias tsn='npx ts-node'
 # Rust
 alias ca='cargo'
 
+# Ding
+alias play_ding="afplay /System/Library/Sounds/Glass.aiff"
+alias ding="play_ding&"
+
 # Misc
 # TODO: update to current version
-alias psql="/opt/homebrew/Cellar/postgresql@16/16.3/bin/psql"
+alias psql="/opt/homebrew/Cellar/postgresql@16/16.5/bin/psql"
+
+# Kubernetes
+alias k=kubectl
+alias ar=argocd
+
+# Shortcuts
+alias dotfiles="vim ~/.dotfiles"

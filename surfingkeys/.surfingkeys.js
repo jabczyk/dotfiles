@@ -17,3 +17,9 @@ api.mapkey(";g", "Genius", () => {
   const url = `https://www.google.com/search?q=${query}`;
   window.open(url, "_blank").focus();
 });
+
+api.unmapAllExcept(['j','k'], /linear.app/);
+api.unmapAllExcept([], /geotastic.net/);
+api.unmapAllExcept([], /docs.google.com/);
+api.unmapAllExcept([], /www.nytimes.com/);
+api.unmapAllExcept([], /brew.sh/);

@@ -1,9 +1,5 @@
 #!/usr/bin/env zsh
 
-### Git setup
-git config --global user.name "Michał Jabczyk"
-git config --global user.email "13063089+jabczyk@users.noreply.github.com"
-
 ### Apps
 
 # Install brew
@@ -30,8 +26,13 @@ brew install --cask steam
 brew install --cask macwhisper
 brew install --cask the-unarchiver
 brew install --cask ticktick
-brew install --cask linearmouse
+brew install --cask mac-mouse-fix
 brew install --cask zed
+brew install --cask slack
+brew install --cask eqmac
+brew install --cask daisydisk
+brew install --cask iterm2
+brew install --cask crossover
 
 brew install stats
 brew install node
@@ -47,6 +48,15 @@ brew install zoxide
 brew install ripgrep
 brew install nmap
 brew install gh
+brew install pkg-config
+brew install cowsay
+brew install cmake
+brew install kubeseal
+brew install jordanbaird-ice
+brew install tmux
+brew install kustomize
+brew install helm
+brew install deno
 
 # Install fonts
 brew tap homebrew/cask-fonts

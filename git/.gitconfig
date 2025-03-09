@@ -1,0 +1,18 @@
+[user]
+  name = Michał Jabczyk
+  email = 13063089+jabczyk@users.noreply.github.com
+[pull]
+  rebase = false
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[init]
+	defaultBranch = main
+[diff]
+	algorithm = histogram
+[push]
+	autoSetupRemote = true
+	followTags = true
+[help]
+	autocorrect = prompt
